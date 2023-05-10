@@ -1,0 +1,90 @@
+Arguments: 
+  E:\Vue3\node.exe C:\Users\46162\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add simpleitk
+
+PATH: 
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;E:\Python-3.10.10;C:\Program Files\Java\jdk-19\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Anaconda;C:\Anaconda\bin;C:\Anaconda\Library\bin;C:\Anaconda\Library\mingw-w64;C:\Program Files\dotnet\;D:\gongzuo\vscode\bin;D:\软件\EasyShare\x86\;C:\python\Scripts;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Git\cmd;E:\Vue3\;C:\ProgramData\chocolatey\bin;E:\anaconda;E:\anaconda\Scripts;E:\anaconda\Library\bin;E:\anaconda\Library\usr\bin;E:\anaconda\Library\mingw-w64\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.2.0\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7;E:\HomeWork\shixun\web_wechat\dll;E:\MongoDB\bin;E:\MongoDB\mongosh-1.8.0-win32-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\code\tomcat\bin;E:\code\tomcat\lib;E:\Python-3.10.10\Scripts\;E:\Python-3.10.10\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\python\Scripts\;C:\python\;D:\软件\Adobe After Effects 2020\Support Files\\Plug-ins\Extensions\AtomKraft\bin;C:\Users\46162\.dotnet\tools;D:\工作\vs code\Microsoft VS Code\bin;E:\code\Python\PyCharm 2022.3.3\bin;;C:\Program Files\Azure Data Studio\bin;C:\Users\46162\AppData\Local\GitHubDesktop\bin;C:\Users\46162\AppData\Roaming\npm;E:\code\JAVA\IDEA\IntelliJ IDEA 2022.3.2\bin;;E:\MongoDB\bin;;C:\Users\46162\AppData\Local\Microsoft\WindowsApps
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.7.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/simpleitk: Not found
+      at params.callback [as _callback] (C:\Users\46162\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\46162\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:512:28)
+      at Request.<anonymous> (C:\Users\46162\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:512:28)
+      at IncomingMessage.<anonymous> (C:\Users\46162\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:626:28)
+      at IncomingMessage.emit (node:events:524:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "medical_0.1.0",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build",
+      "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+      "@fortawesome/vue-fontawesome": "^3.0.3",
+      "axios": "^1.3.6",
+      "core-js": "^3.8.3",
+      "mongodb": "^5.3.0",
+      "mongoose": "^7.0.5",
+      "multer": "^1.4.5-lts.1",
+      "three": "^0.152.2",
+      "vue": "^3.2.47",
+      "vue-awesome-swiper": "^5.0.1",
+      "vue-router": "^4.1.6",
+      "vue-scrollto": "^2.20.0",
+      "vue-smooth-scroll": "^1.0.13",
+      "vue-transition": "^0.1.3"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.16",
+      "@babel/eslint-parser": "^7.12.16",
+      "@vue/cli-plugin-babel": "~5.0.0",
+      "@vue/cli-plugin-eslint": "~5.0.0",
+      "@vue/cli-service": "~5.0.0",
+      "eslint": "^7.32.0",
+      "eslint-plugin-vue": "^8.0.3",
+      "vue-router-invoke-webpack-plugin": "^0.4.4"
+    },
+    "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:vue/vue3-essential",
+        "eslint:recommended"
+      ],
+      "parserOptions": {
+        "parser": "@babel/eslint-parser"
+      },
+      "rules": {}
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not dead",
+      "not ie 11"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

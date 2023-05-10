@@ -1,0 +1,74 @@
+.Navbar {
+    /* Navbar styles */
+    -webkit-box-pack: justify; 
+    justify-content: space-between; 
+    height: 50px; 
+    padding: 50px 80px; 
+    -webkit-box-align: center; 
+    align-items: center; 
+    position: fixed; 
+    width: calc(100vw - 60px); 
+    top: 0px; 
+    left: 30px; 
+    box-sizing: border-box; 
+    z-index: 1000; 
+    display: flex; 
+    border-radius: 80px;
+}
+
+.navbar_logo{
+    display: flex; 
+    -webkit-box-align: center; 
+    align-items: center; 
+    cursor: pointer;
+}
+
+.logo_svg{
+    fill: rgb(18, 25, 43);
+    cursor: pointer;
+}
+
+.navbar-nav{
+    display: flex; 
+    -webkit-box-pack: justify; 
+    justify-content: space-between; 
+    -webkit-box-align: center; 
+    align-items: center; 
+    position: relative;
+    margin:  0px; 
+    padding:  0px;
+    list-style: none;
+}
+
+.nav-item{
+    width: 120px;
+    height: 40px;
+    padding: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-item:hover{
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    background-color: aliceblue;
+}
+
+.nav-item a{
+    text-align: center; 
+    width: 120px; 
+    color: rgba(18, 25, 43, 0.65); 
+    text-decoration: none; 
+    font-family: ak-light; 
+    font-style: normal; 
+    font-size: 20px; 
+    line-height: 40px; 
+    display: block; 
+    min-width: 58px;
+}
+
+.nav-item a:hover{
+    font-family: Ak-Regular;
+    font-size: 22px;
+    font-weight: bold;
+}

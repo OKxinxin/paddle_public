@@ -1,0 +1,56 @@
+前端：
+
+const fileName = 'your_file_name.nii.gz';
+const requestUrl = `http://localhost:3001/get-data/${fileName}`;
+
+axios.get(requestUrl, {
+  responseType: 'blob' // 以二进制流的形式接收响应数据
+})
+  .then(response => {
+    // 处理响应数据
+    console.log(response.data);
+  })
+  .catch(error => {
+    // 处理错误
+    console.error(error);
+  });
+
+服务器：
+
+// 路由：从数据库中读取数据
+app.get('/get-data/:filename/:type?', (req, res) => {
+    const { filename, type } = req.params;
+    importMongo.getData(filename, type, res);
+  });
+
+数据库：
+
+// 从数据库中读取 .nii.gz 格式数据
+const getData = (filename, type, res) => {
+  // 创建 GridFS 存储的读取流
+  const readStream = gfs.openDownloadStreamByName(filename);
+
+  // 获取文件类型
+  const fileType = type || 'application/octet-stream';
+
+  // 设置响应头
+  res.set('Content-Type', fileType);
+
+  // 创建解压流
+  const decompress = zlib.createGunzip();
+
+  // 读取流 -> 解压流 -> 响应流
+  readStream.pipe(decompress).pipe(res);
+
+  // 监听读取流的错误事件
+  readStream.on('error', (err) => {
+    console.error(err);
+    res.status(500).send('Error reading file');
+  });
+
+  // 监听解压流的错误事件
+  decompress.on('error', (err) => {
+    console.error(err);
+    res.status(500).send('Error decompressing file');
+  });
+};
